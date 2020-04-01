@@ -1,0 +1,26 @@
+A run time analysis (Worst Case Big-O Notation) of task solutions
+
+Task 0:
+Worst Case Big-O Notation is : O(1)
+There are loops or inputs to go through.
+
+
+Task 1:
+Worst Case Big-O Notation is : O(n)
+We accessed sequentially both files for two columns
+
+
+Task 2:
+Worst Case Big-O Notation is : O(n)
+like task 1 here also we accessed all calls. Thats based on the no. of n(inputs)
+
+
+Task 3:
+Worst Case Big-O Notation is : O(n log n)
+This happened because we need to do work of size 𝑂(𝑙𝑜𝑔(𝑛)) for every record (when there’s 𝑛 of them).
+
+
+Task 4:
+Worst Case Big-O Notation is : O(n log n)
+An algorithm is said to have a quasilinear time complexity when each operation in the input data have a logarithm time complexity. 
+It is commonly happens in sorting algorithms
