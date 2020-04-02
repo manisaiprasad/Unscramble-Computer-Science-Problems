@@ -36,8 +36,7 @@ def main():
         if phonenumbers[number] >= max_call_time:
             max_call_time = phonenumbers[number]
             max_phone_num = number
-    # print(max_call_time)
-    # print(max_phone_num)
+
     print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(max_phone_num,max_call_time))
 
 
