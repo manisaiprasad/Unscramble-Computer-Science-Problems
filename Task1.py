@@ -33,7 +33,7 @@ def main():
 
     phonenumbers = set(numbers)
 
-    print("Unique Numbers: {}".format(len(phonenumbers)))
+    print("There are {} different telephone numbers in the records.".format(len(phonenumbers)))
 
 if __name__ == '__main__':
     main()
