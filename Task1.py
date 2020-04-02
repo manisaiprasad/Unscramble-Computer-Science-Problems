@@ -31,8 +31,6 @@ def main():
         for i in range(2):
             numbers.append(calls[num][i])    
 
-    print("Total Numbers(Incomming/Answering): {}".format(len(numbers)))
-
     phonenumbers = set(numbers)
 
     print("Unique Numbers: {}".format(len(phonenumbers)))
