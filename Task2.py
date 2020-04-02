@@ -19,27 +19,20 @@ Print a message:
 "<telephone number> spent the longest time, <total time> seconds, on the phone during 
 September 2016.".
 """
-
+import collections
 def main():
-    phonenumbers =dict()
-    
+    phonenumbers = collections.defaultdict(int)
+    max_call_time = 0
+    max_phone_num = None
     #creating dict with phone numbers as key and call time as values
     for call in calls:
-        for call_element in [0, 1]:
-            phonenumbers[call[call_element]] = int(call[3])
-
-    max_call_time = 0
-    max_telephone_num = ''
-    # print(phonenumbers)
-
-    for number in phonenumbers:
-        if phonenumbers[number] >= max_call_time:
+        for number in call[0:2]:
+            phonenumbers[number] += int(call[3])
+        # find longest phone call.
+        if phonenumbers[number] > max_call_time:
             max_call_time = phonenumbers[number]
             max_phone_num = number
-
     print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(max_phone_num,max_call_time))
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-    
